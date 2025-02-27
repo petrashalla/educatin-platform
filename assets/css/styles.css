@@ -1347,6 +1347,7 @@ input[type=search]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
   font-size: 16px;
   color: var(--shrift---temnyy---100);
   transition: all 0.3s ease;
@@ -3292,7 +3293,9 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .statistic tbody tr {
   display: flex;
+  align-items: center;
   width: 100%;
+  border-bottom: 1px solid var(--osnovnoy---50);
 }
 .statistic tbody td:nth-child(1) {
   width: 100%;
@@ -3325,13 +3328,12 @@ input[type=search]::-webkit-search-results-decoration {
 .statistic tbody td {
   border: none;
   padding: 16px 10px;
-  border-bottom: 1px solid var(--osnovnoy---50);
-  line-height: 120%;
   font-size: 14px;
   color: var(--shrift---temnyy---tekst-v-uroke);
 }
 .statistic tbody td:first-child {
   padding-left: 16px;
+  line-height: 120%;
 }
 .statistic tbody td:last-child {
   padding: 16px;
