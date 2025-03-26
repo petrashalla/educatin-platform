@@ -17,6 +17,23 @@
     <script src="assets/js/build/fancybox.min.js" defer></script>
     <script src="assets/js/chart.js" defer></script>
     <script src="assets/js/main.js" defer></script>
+    
+    <!-- Подключение библиотеки Prism для отображения кода -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup-templating.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    
     <script> </script>
     
     
@@ -159,7 +176,7 @@
                                     </defs>
                                   </svg>
                             </button>
-                        </div>
+                        </div> 
     
                         <h3>Что такое клиентская база и зачем она нужна?</h3>
                         <p>Клиентская база — это собранная информация о ваших текущих и потенциальных клиентах. Она может включать контактные данные, историю покупок, предпочтения и другие важные сведения. Хорошо организованная клиентская база позволяет:</p>
@@ -168,6 +185,67 @@
                             <li>Разрабатывать точечные маркетинговые кампании</li>
                             <li>Увеличивать повторные продажи и удерживать клиентов</li>
                         </ul>
+    
+    <!-- Примеры вывода кода -->
+    
+    <pre class="language-php line-numbers"><code><xmp>
+    <body>
+        <h1>Интерактивность с помощью JavaScript</h1>
+        <p id="message">Нажмите на кнопку, чтобы изменить этот текст.</p>
+        <button onclick="changeText()">Нажми меня</button>
+        <script>
+            function changeText() {
+                document.getElementById('message').innerText = 'Текст изменен!';
+            }
+        </script>
+    </body>
+    </xmp></code></pre>
+    
+    
+    <pre><code class="language-php line-numbers">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Интерактивная веб-страница&lt;/title&gt;
+            &lt;style&gt;        
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    color: #333;
+                }        
+                h1 {
+                    color: #0066cc;
+                }        
+                p {
+                    font-size: 16px;
+                }        
+                button {
+                    padding: 10px 20px;
+                    background-color: #0066cc;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Интерактивность с помощью JavaScript&lt;/h1&gt;
+            &lt;p id="message"&gt;Нажмите на кнопку, чтобы изменить этот текст.&lt;/p&gt;
+            &lt;button onclick="changeText()"&gt;Нажми меня&lt;/button&gt;
+            &lt;script&gt;
+                function changeText() {
+                    document.getElementById('message').innerText = 'Текст изменен!';
+                }    
+            &lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+    
+    
+    <pre><code class="language-sql line-numbers">
+    SELECT * FROM users WHERE id = 1;
+    </code></pre>
+        
     
                         <h3>Этапы создания клиентской базы</h3>
                         <ol>
